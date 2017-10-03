@@ -41,9 +41,7 @@ $(document).on("click", ".topicButton", function() {
       newImg.attr("data-state", "still");
 
       newDiv.append(newP, newImg);
-      $("#gif-area").after(newDiv);
-      //i can't get the gifs to appear on the right side of the previous gif
-      //they get added under the previous gif
+      $("#gif-area").append(newDiv);
     }
   })
 })
